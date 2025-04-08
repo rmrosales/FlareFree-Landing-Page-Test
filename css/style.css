@@ -76,7 +76,7 @@ p {
     inset: 0;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.2);
     z-index: -1;
 
     /* The fade effect */
@@ -118,7 +118,7 @@ p {
 /* --- Main Content --- */
 
 .main {
-    background-color: rgba(247, 201, 178, 0.5);
+    background-color: rgba(247, 201, 178, 0.15);
     position: relative;
     z-index: -10;
     top: -130px;
@@ -222,6 +222,7 @@ p {
 .div3,
 .div4,
 .div5 {
+    background-color: #fff;
     height: 260px;
     display: flex;
     padding: 34px 24px;
@@ -230,8 +231,8 @@ p {
     align-items: flex-start;
     gap: 10px;
     border-radius: 30px;
-    border: 0.5px solid rgba(19, 19, 19, 0.2);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06), 0px 1px 8px rgba(0, 0, 0, 0.04);
+    border: 0.5px solid rgba(19, 19, 19, 0.1);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04), 0px 1px 15px rgba(0, 0, 0, 0.04);
 }
 
 /* Default layout (for larger screens) */
@@ -388,7 +389,7 @@ p {
 
     .grid-wrapper {
         grid-template-columns: 1fr;
-        width: 90vw;
+        width: 80vw;
         /* 1 column for very small screens */
     }
 
