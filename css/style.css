@@ -1,0 +1,415 @@
+:root {
+    /* Color Scheme */
+    --primary-color: #ffffff;
+    --accent-color-1: #34af44;
+    --accent-gradient-1: linear-gradient(0deg, #0D0d0d 100%, #0D0d0d 100%);
+    --text-color-primary: #0A0A0A;
+    --background-color: #FFF;
+    /* Typography */
+    --font-family: Helvetica, "Inter", Arial, sans-serif;
+    --font-size-base: 18px;
+    --font-size-heading: 24px;
+    --font-weight-light: 300;
+    --font-weight-med-light: 400;
+    --font-weight-regular: 500;
+    --font-weight-bold: 900;
+    /* Spacing & layout */
+    --spacing-unit: 18px;
+    /* Transitions */
+    --transition-duration: .5s;
+    --scale: 1;
+    --scale-hover: 1.02;
+}
+
+/* Let's see the ghost divs */
+* {
+    outline: 1px solid rgba(247, 201, 178, 0.2);
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+body {
+    /* Global settings */
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* --- Navigation --- */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: transparent;
+    height: 130px;
+    overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    height: 130px;
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+
+    /* The fade effect */
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.nav-wrapper {
+    position: sticky;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 130px;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80vw;
+    max-width: 1100px;
+    height: 130px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    text-decoration: none;
+    display: flex;
+}
+
+.nav-app-download {
+    display: flex;
+}
+
+
+/* --- Main Content --- */
+
+.main {
+    background-color: rgba(247, 201, 178, 0.02);
+    position: relative;
+    z-index: 0;
+    top: -130px;
+}
+
+.wrapper {
+    /* background-color: rgba(255, 123, 0, 0.1); */
+    height: 2000px;
+    top: 0;
+    width: 100vw;
+    margin: auto;
+    position: relative;
+
+}
+
+.banner-wrapper {
+    /* background-color: rgba(0, 0, 0, .1); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-top: 130px;
+    width: 600px;
+    gap: 14px;
+    align-self: stretch;
+}
+
+.content-wrapper {
+    /* background-color: rosybrown; */
+    margin: auto;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+.content-wrapper img {
+    display: flex;
+    margin: 0;
+}
+
+.intro-content-wrapper {
+    margin: 0;
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.intro-content-wrapper h1 {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.intro-content-wrapper h2 {
+    color: #685b58;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+p {
+    color: #404155;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* .hero-mock {
+    width: 500px;
+    height: auto;
+} */
+
+/* Hero Image Animation */
+.hero-mock {
+    position: relative;
+    width: 500px;
+    height: auto;
+}
+
+.section-wrapper {
+    /* background-color: rgba(0, 0, 0, .1); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-top: 130px;
+    gap: 44px;
+    align-self: stretch;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 24px;
+    width: 1000px;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5 {
+    height: 260px;
+    display: flex;
+    padding: 34px 24px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 30px;
+    border: 0.5px solid rgba(19, 19, 19, 0.2);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06), 0px 1px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Default layout (for larger screens) */
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+}
+
+.div4 {
+    grid-column: span 4 / span 4;
+    grid-row: span 3 / span 3;
+    grid-row-start: 4;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 4;
+}
+
+/* Grid typography */
+.grid-wrapper h2 {
+    color: #685b58;
+    text-align: left;
+    font-size: 21px;
+    line-height: normal;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+}
+
+.grid-wrapper p {
+    color: #404155;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+@media only screen and (max-width: 1070px) {
+
+    .header {
+        height: 100px;
+    }
+
+    .grid-wrapper {
+        width: 90vw;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .nav-wrapper,
+    .nav-container {
+        height: 100px;
+        width: 90vw;
+        margin: auto;
+        top: 0;
+        overflow: hidden;
+    }
+
+    .nav-logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    .banner-wrapper,
+    .content-wrapper {
+        width: 90vw;
+        max-width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .banner-wrapper {
+        padding-top: 130px;
+    }
+
+    .intro-content-wrapper h1 {
+        font-size: 32px;
+        /* smaller for mobile */
+    }
+
+    .intro-content-wrapper h2, .grid-wrapper h2 {
+        font-size: 20px;
+    }
+
+    p, .grid-wrapper p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .content-wrapper {
+        width: 90vw;
+    }
+
+    .hero-mock {
+        width: 400px;
+        height: auto;
+    }
+
+    .grid-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+        /* 2 columns for small screens */
+    }
+
+    .div1,
+    .div2,
+    .div3,
+    .div4,
+    .div5 {
+        padding: 20px;
+        /* Adjust padding for small screens */
+    }
+
+    .div1,
+    .div2,
+    .div3,
+    .div4,
+    .div5 {
+        grid-column: span 2;
+        /* Each item spans 2 columns */
+        grid-row: span 1;
+        /* Items take up 1 row */
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    #nav-app-download {
+        display: none;
+    }
+
+    .nav-container {
+        justify-content: center
+    }
+
+    .grid-wrapper {
+        grid-template-columns: 1fr;
+        width: 90vw;
+        /* 1 column for very small screens */
+    }
+
+    .div1,
+    .div2,
+    .div3,
+    .div4,
+    .div5 {
+        grid-column: span 1;
+        /* Each item takes the full width */
+        grid-row: span 1;
+        /* Each item takes up 1 row */
+    }
+
+}
