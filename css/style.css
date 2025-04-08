@@ -22,9 +22,9 @@
 }
 
 /* Let's see the ghost divs */
-* {
+/* * {
     outline: 1px solid rgba(247, 201, 178, 0.2);
-}
+} */
 
 *, *::before, *::after {
     box-sizing: border-box;
