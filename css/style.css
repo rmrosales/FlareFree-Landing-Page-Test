@@ -215,6 +215,12 @@ p {
     border: 1px solid #EB4814;
     border-radius: 50px;
     cursor: pointer;
+    transition: all .3s ease;
+}
+
+.cta:hover {
+    display: flex;
+    background-color: #fd6e42;
 }
 
 .hero-mock {
