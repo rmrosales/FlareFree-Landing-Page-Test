@@ -79,14 +79,14 @@ p {
     background: rgba(255, 255, 255, 0.2);
     z-index: -1;
 
-    /* The fade effect */
+    /* The fade effect for background blur*/
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
 .nav-wrapper {
     position: sticky;
-    z-index: 1000;
+    z-index: 140;
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
@@ -120,7 +120,7 @@ p {
 .main {
     background-color: rgba(247, 201, 178, 0.15);
     position: relative;
-    z-index: -10;
+    z-index: 0;
     top: -130px;
 }
 
@@ -196,6 +196,22 @@ p {
     font-size: 17px;
     font-weight: 500;
     line-height: 1.5;
+}
+
+.cta-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.cta {
+    color: white;
+    background-color: #EE4A17;
+    padding: 14px 34px;
+    text-decoration: none;
+    border: 1px solid #EB4814;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 .hero-mock {
