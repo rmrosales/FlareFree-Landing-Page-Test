@@ -22,9 +22,9 @@
 }
 
 /* Let's see the ghost divs */
-* {
+/* * {
     outline: 1px solid rgba(247, 201, 178, 0.2);
-}
+} */
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -174,7 +174,7 @@ p {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06), 0px 1px 8px rgba(0, 0, 0, 0.04);
 }
 
-.intro-content-wrapper h1 {
+h1 {
     display: flex;
     justify-content: center;
     color: #000;
@@ -182,6 +182,10 @@ p {
     font-size: 46px;
     font-weight: 500;
     letter-spacing: -0.5px;
+}
+
+.section-title {
+    font-size: 26px;
 }
 
 .intro-content-wrapper h2 {
@@ -293,7 +297,7 @@ p {
     /* gap: 10px; */
     border-radius: 30px;
     border: 0.5px solid rgba(19, 19, 19, 0.15);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04), 0px 1px 15px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03), 0px 1px 15px rgba(0, 0, 0, 0.01);
 }
 
 .card-img {
@@ -350,12 +354,12 @@ p {
 
 /* Grid typography */
 .grid-wrapper h2 {
-    color: #685b58;
+    color: #1d1d1d;
     text-align: left;
-    font-size: 21px;
-    line-height: normal;
+    font-size: 20px;
+    line-height: 27px;
     font-weight: 500;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.1px;
 }
 
 .grid-wrapper p {
@@ -374,7 +378,7 @@ p {
     padding: var(--spacing-unit) 0;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 44px;
     padding-top: 130px;
     font-family: var(--font-family);
   }
@@ -393,11 +397,11 @@ p {
   }
   
   .accordion-item {
-    border: 1px solid rgba(19, 19, 19, 0.1);
+    border: .5px solid rgba(19, 19, 19, 0.1);
     border-radius: 16px;
     overflow: hidden;
     background-color: #fff;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.02);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03), 0px 1px 15px rgba(0, 0, 0, 0.01);
   }
   
   .accordion-header {
@@ -504,9 +508,13 @@ p {
         padding-top: 130px;
     }
 
-    .intro-content-wrapper h1 {
+    h1{
         font-size: 32px;
         /* smaller for mobile */
+    }
+
+    .section-title {
+        font-size: 24px;
     }
 
     .intro-content-wrapper h2, .grid-wrapper h2 {
@@ -523,11 +531,11 @@ p {
     }
 
     .grid-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        width: 70vw;
-        background-color: #000;
-        grid-template-rows: repeat(5, 1fr);
         /* 2 columns for small screens */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 70vw;
+
     }
 
            /* Adjust padding for small screens */
