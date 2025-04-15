@@ -522,15 +522,6 @@ p {
         width: 90vw;
     }
 
-    .hero-mock {
-        width: 400px;
-        height: auto;
-    }
-
-    .mock-main, .mock-left, .mock-right {
-        width: 150px;
-    }
-
     .grid-wrapper {
         grid-template-columns: repeat(2, 1fr);
         width: 70vw;
@@ -593,7 +584,8 @@ p {
 
 @media only screen and (max-width: 480px) {
 
-    body {
+
+    wrapper {
         overflow-x: hidden;
     }
 
@@ -610,10 +602,6 @@ p {
         grid-template-columns: 1fr;
         width: 80vw;
         /* 1 column for very small screens */
-    }
-
-    wrapper {
-        overflow-x: hidden;
     }
 
     .hero-mock-wrapper {
