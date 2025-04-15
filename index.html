@@ -52,7 +52,9 @@
                 </div>
             </div>
         </div>
-        <div class="trigger"></div>
+        <div class="hero-mock-trigger">
+
+        </div>
 
         <div class="section-wrapper">
             <div class="content-wrapper">
@@ -131,25 +133,25 @@
     
         const tl = gsap.timeline({
             scrollTrigger: {
-                trigger: ".trigger",
+                trigger: ".hero-mock-trigger",
                 start: "top bottom",
                 end: "bottom center",
                 scrub: true
             }
         });
     
-        const leftX = isMobile ? "-220px" : "-340px";
-        const rightX = isMobile ? "220px" : "340px";
+        const leftX = isMobile ? "-320px" : "-340px";
+        const rightX = isMobile ? "320px" : "340px";
     
         tl.to(".mock-left", {
             x: leftX,
-            y: 44,
+            y: 124,
             opacity: 1,
             duration: 1,
             ease: "power3.out"
         }, 0).to(".mock-right", {
             x: rightX,
-            y: 44,
+            y: 124,
             opacity: 1,
             duration: 1,
             ease: "power3.out"

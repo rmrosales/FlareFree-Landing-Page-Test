@@ -1,7 +1,7 @@
 :root {
     /* Color Scheme */
     --primary-color: #ffffff;
-    --accent-color-1: #34af44;
+    --accent-color-1: #EB4814;
     --accent-gradient-1: linear-gradient(0deg, #0D0d0d 100%, #0D0d0d 100%);
     --text-color-primary: #0A0A0A;
     --background-color: #FFF;
@@ -22,9 +22,9 @@
 }
 
 /* Let's see the ghost divs */
-/* * {
+* {
     outline: 1px solid rgba(247, 201, 178, 0.2);
-} */
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -205,13 +205,14 @@ p {
     flex-direction: row;
     align-items: center;
     gap: 8px;
+    margin-top: 14px;
 }
 
 .cta {
     display: flex;
     height: 44px;
     color: white;
-    background-color: #EE4A17;
+    background-color: var(--accent-color-1);
     padding: 10px 34px;
     text-decoration: none;
     border: 1px solid #EB4814;
@@ -225,10 +226,6 @@ p {
     background-color: #fd6e42;
 }
 
-/* .hero-mock {
-    width: 500px;
-    height: auto;
-} */
 
 /* Hero banner animation */
 
@@ -493,11 +490,11 @@ p {
     }
 
     .hero-mock-wrapper {
-        height: 440px;
+        height: 540px;
       }
 
     .hero-mock {
-        width: 50vw;
+        width: 62vw;
         height: auto;
     }
 
