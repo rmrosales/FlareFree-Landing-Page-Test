@@ -534,6 +534,8 @@ p {
     .grid-wrapper {
         grid-template-columns: repeat(2, 1fr);
         width: 70vw;
+        background-color: #000;
+        grid-template-rows: repeat(5, 1fr);
         /* 2 columns for small screens */
     }
 
@@ -558,7 +560,36 @@ p {
         /* Items take up 1 row */
     }
 
-}
+    /* FAQ fixes */
+
+        .faq-section {
+          width: 90%;
+          gap: 16px;
+        }
+      
+        .faq-section h2 {
+          font-size: 22px; /* Adjust as needed for smaller screens */
+        }
+      
+        .accordion-header {
+          font-size: 16px;
+          padding: 16px 20px;
+        }
+      
+        .accordion-body {
+          padding: 0 20px;
+        }
+      
+        .accordion-item.active .accordion-body {
+          padding: 12px 20px 16px;
+        }
+      
+        .accordion-body p {
+          font-size: 15px;
+        }
+      }
+      
+
 
 @media only screen and (max-width: 480px) {
 
