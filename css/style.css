@@ -22,9 +22,9 @@
 }
 
 /* Let's see the ghost divs */
-* {
+/* * {
     outline: 1px solid rgba(247, 201, 178, 0.2);
-}
+} */
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -268,12 +268,13 @@ p {
 .card-img {
     flex: 2;
     width: 100%;
-    background-color: #e0e0e0; /* Placeholder color */
+    background-color: #e0e0e0;
     background-size: cover;
     background-position: center;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
+
 
 .card-content {
     flex: 1;
