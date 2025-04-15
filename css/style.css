@@ -303,11 +303,22 @@ p {
 .card-img {
     flex: 2;
     width: 100%;
-    background-color: #e0e0e0;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #e0e0e0; */
     background-size: cover;
     background-position: center;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    overflow: hidden;
+}
+
+.card-img img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -626,7 +637,7 @@ p {
     .div3,
     .div4,
     .div5 {
-        grid-column: span 1;
+        /* grid-column: span 1; */
         /* Each item takes the full width */
         grid-row: span 1;
         /* Each item takes up 1 row */
