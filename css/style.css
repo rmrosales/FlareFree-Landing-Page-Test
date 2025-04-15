@@ -201,13 +201,16 @@ p {
 .cta-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 14px;
+    align-items: center;
+    gap: 8px;
 }
 
 .cta {
+    display: flex;
+    height: 44px;
     color: white;
     background-color: #EE4A17;
-    padding: 14px 34px;
+    padding: 10px 34px;
     text-decoration: none;
     border: 1px solid #EB4814;
     border-radius: 50px;
