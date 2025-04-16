@@ -590,7 +590,7 @@ p {
   }
   
   .footer-link {
-    color: #333;
+    color: var(--accent-color-1);
     text-decoration: none;
     transition: color 0.2s;
   }
