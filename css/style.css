@@ -145,6 +145,7 @@ p {
 
 .banner-wrapper.ender{
     padding-top: 50px;
+    padding-bottom: 80px;
 }
 
 .content-wrapper {
@@ -564,6 +565,7 @@ p {
     font-size: 14px;
     color: #333;
     flex-wrap: wrap;
+    margin-top: -130px;
   }
   
   .footer-left {
