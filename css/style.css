@@ -76,7 +76,7 @@ p {
     height: 130px;
     position: absolute;
     inset: 0;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.5);
     z-index: -1;
@@ -370,7 +370,7 @@ p {
 }
 
 .div4.long-bento {
-    background-image: url('../img/bento-img/div4-bghero.png');
+    background-image: url('../img/bento-img/div4-bghero.gif');
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -798,5 +798,21 @@ p {
         grid-row: span 1;
         /* Each item takes up 1 row */
     }
+
+    /* Footer Fixes */
+
+    .footer {
+        gap: 14px;
+      }
+      
+      .footer-left {
+        flex-direction: column;
+        gap: 8px;
+      }
+      
+      .footer-logo {
+        height: 34px;
+      }
+      
 
 }
