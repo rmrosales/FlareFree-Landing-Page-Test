@@ -276,7 +276,7 @@ a.app-store:hover {
 
 /* Hero banner animation */
 .hero-mock-trigger {
-    top: -140px;
+    top: -40px;
     /* border: solid 1px red; */
     position: relative;
 }
@@ -306,11 +306,113 @@ a.app-store:hover {
 .mock-left,
 .mock-right,
 .mock-left-bottom,
-.mock-right-botton {
+.mock-right-bottom {
     width: 300px;
     z-index: 1;
     opacity: 0;
 }
+
+.mock-center {
+    background: #2A7B9B;
+    background: radial-gradient(circle, rgba(42, 123, 155, 0) 0%, rgba(199, 141, 87, 0.19) 83%, rgba(237, 142, 83, 0.62) 100%);
+    width: 600px;
+    filter: blur(.5px);
+    height: 600px;
+    border-radius: 100%;
+    z-index: 1;
+    opacity: .4;
+    border: 0.5px solid rgb(255, 0, 0);
+}
+
+.mock-center-2 {
+    background: #2A7B9B;
+    background: radial-gradient(circle, rgba(42, 123, 155, 0) 0%, rgba(199, 141, 87, 0.19) 83%, rgba(237, 142, 83, 0.62) 100%);
+    width: 500px;
+    filter: blur(.5px);
+    height: 500px;
+    border-radius: 100%;
+    z-index: 1;
+    opacity: .4;
+    border: 0.5px solid rgb(255, 0, 0);
+}
+
+.mock-center-3 {
+    background: #2A7B9B;
+    background: radial-gradient(circle, rgba(42, 123, 155, 0) 0%, rgba(199, 141, 87, 0.19) 83%, rgba(237, 142, 83, 0.62) 100%);
+    width: 400px;
+    filter: blur(.5px);
+    height: 400px;
+    border-radius: 100%;
+    z-index: 1;
+    opacity: .4;
+    border: 0.5px solid rgb(255, 0, 0);
+}
+
+
+
+.mock-topright {
+    width: 120px;
+    border-radius: 100%;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    border-radius: 100%;
+    transition: opacity 0.5s ease;
+    top: 0px;
+    left: 400px;
+}
+
+.mock-topleft {
+    width: 120px;
+    border-radius: 100%;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+    top: 0px;
+    left: -500px;
+}
+
+.mock-topright-2 {
+    width: 120px;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+    top: 190px;
+    left: 220px;
+}
+
+.mock-topleft-2 {
+    width: 120px;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+    top: 350px;
+    left: -460px;
+}
+
+.mock-topright-3 {
+    width: 150px;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+    top: 320px;
+    left: 350px;
+}
+
+.mock-topleft-3 {
+    width: 120px;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+    top: 170px;
+    left: -340px;
+}
+
 
 /* Hero banner animation */
 
@@ -683,12 +785,21 @@ a.app-store:hover {
         background-position-x: 300px;
     }
 
+    .hero-mock-trigger {
+        top: 250px;
+        border: 1px solid red;
+    }
+
 }
 
 
 
 
 @media only screen and (max-width: 768px) {
+
+    .hero-mock-trigger {
+        top: -240px;
+    }
 
     .nav-wrapper,
     .nav-container {
@@ -842,8 +953,18 @@ a.app-store:hover {
         top: -240px;
     }
 
+    .mini {
+        width: 50%;
+        height: auto;
+    }
+
     .hero-mock {
         width: 62vw;
+        height: auto;
+    }
+
+    .mini {
+        width: 100px;
         height: auto;
     }
 

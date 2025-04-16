@@ -48,8 +48,17 @@
                 </div>
                 <div class="hero-mock-wrapper">
                     <img class="hero-mock mock-left" src="img/hero-mock-phone-left.png" alt="">
+                    <img class="hero-mock mock-topleft mini" src="img/beer-ico.png" alt="">
+                    <img class="hero-mock mock-topleft-2 mini" src="img/burger-ico.png" alt="">
+                    <img class="hero-mock mock-topleft-3 mini" src="img/meds-ico.png" alt="">
+                    <img class="hero-mock mock-topright mini" src="img/chicken-ico.png" alt="">
+                    <img class="hero-mock mock-topright-2 mini" src="img/coffee-ico.png" alt="">
+                    <img class="hero-mock mock-topright-3 mini" src="img/crutches-ico.png" alt="">
                     <img class="hero-mock mock-main" src="img/hero-mock-phone-main.png" alt="">
                     <img class="hero-mock mock-right" src="img/hero-mock-phone-right.png" alt="">
+                    <div class="hero-mock mock-center"></div>
+                    <div class="hero-mock mock-center-2"></div>
+                    <div class="hero-mock mock-center-3"></div>
                 </div>
             </div>
         </div>
@@ -293,7 +302,7 @@
                 <div class="hero-mock-wrapper">
                     <img class="hero-mock mock-left-bottom" src="img/hero-mock-phone-left.png" alt="">
                     <img class="hero-mock mock-main" src="img/hero-mock-phone-main.png" alt="">
-                    <img class="hero-mock mock-right-botton" src="img/hero-mock-phone-right.png" alt="">
+                    <img class="hero-mock mock-right-bottom" src="img/hero-mock-phone-right.png" alt="">
                 </div>
             </div>
         </div>
@@ -332,7 +341,7 @@
             }
         });
 
-        const lt = gsap.timeline({
+        const tl2 = gsap.timeline({
             scrollTrigger: {
                 trigger: ".hero-mock-trigger-bottom",
                 start: "top bottom",
@@ -343,11 +352,14 @@
 
         const leftX = isMobile ? "-250px" : "-340px";
         const rightX = isMobile ? "250px" : "340px";
+        const toplefty = isMobile ? "-250px" : "-340px";
+        const toprighty = isMobile ? "250px" : "340px";
 
         tl.to(".mock-left", {
             x: leftX,
             y: 164,
             opacity: 1,
+            filter: "blur(0px)",
             rotate: -8,
             duration: 1,
             ease: "power1.inOut"
@@ -355,18 +367,102 @@
             x: rightX,
             y: 164,
             opacity: 1,
+            filter: "blur(0px)",
             rotate: 8,
             duration: 1,
             ease: "power1.inOut"
+        }, 0).to(".mock-topright", {
+            x: -500,
+            y: 0,
+            top: 200,
+            opacity: 0,
+            filter: "blur(12px)",
+            rotate: 40,
+            duration: 3,
+            ease: "power4.out"
+        }, 0).to(".mock-topleft", {
+            x: 500,
+            y: 0,
+            top: 200,
+            opacity: 1,
+            filter: "blur(12px)",
+            rotate: -50,
+            duration: 3,
+            ease: "power4.out"
+        }, 0).to(".mock-topright-2", {
+            x: -320,
+            y: 0,
+            top: 200,
+            opacity: 0,
+            filter: "blur(12px)",
+            rotate: 120,
+            duration: 3,
+            ease: "power4.out"
+        }, 0).to(".mock-topleft-2", {
+            x: 420,
+            y: 0,
+            top: 200,
+            opacity: 1,
+            filter: "blur(12px)",
+            rotate: -50,
+            duration: 3,
+            ease: "power4.out"
+        }, 0).to(".mock-topright-3", {
+            x: -450,
+            y: 0,
+            top: 200,
+            opacity: 0,
+            filter: "blur(12px)",
+            rotate: 40,
+            duration: 3,
+            ease: "power4.out"
+        }, 0).to(".mock-topleft-3", {
+            x: 320,
+            y: 0,
+            top: 200,
+            opacity: 1,
+            filter: "blur(12px)",
+            rotate: -50,
+            duration: 3,
+            ease: "power4.out"
+        }, 0).to(".mock-center", {
+            width: 0,
+            height: 0,
+            top: 200,
+            opacity: 0,
+            filter: "blur(2px)",
+            rotate: -50,
+            duration: 5,
+            ease: "power4.out"
+        }, 0).to(".mock-center-2", {
+            width: 0,
+            height: 0,
+            top: 200,
+            opacity: 0,
+            filter: "blur(2px)",
+            rotate: -50,
+            duration: 5,
+            ease: "power4.out"
+        }, 0).to(".mock-center-3", {
+            width: 0,
+            height: 0,
+            top: 200,
+            opacity: 0,
+            filter: "blur(2px)",
+            rotate: -50,
+            duration: 5,
+            ease: "power4.out"
         }, 0);
 
-        lt.to(".mock-left-bottom", {
+
+
+        tl2.to(".mock-left-bottom", {
             x: leftX,
             opacity: 1,
             // rotate: -8,
             duration: 1,
             ease: "power1.inOut"
-        }, 0).to(".mock-right-botton", {
+        }, 0).to(".mock-right-bottom", {
             x: rightX,
             opacity: 1,
             // rotate: 8,
