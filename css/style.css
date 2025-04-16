@@ -282,6 +282,14 @@ p {
     width: 1000px;
 }
 
+.grid-wrapper.three-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 24px;
+    width: 1000px;
+}
+
 
 
 .div1,
@@ -329,6 +337,11 @@ p {
     border-top-right-radius: 30px;
     overflow: hidden;
 }
+
+.card-img.half-width {
+    width: 50%;
+}
+
 
 .card-img img {
     height: 100%;
@@ -507,7 +520,7 @@ p {
 
 @media only screen and (max-width: 1070px) {
 
-    .grid-wrapper {
+    .grid-wrapper, .grid-wrapper.three-cards {
         width: 90vw;
     }
 
@@ -575,7 +588,13 @@ p {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
         width: 70vw;
+    }
 
+    .grid-wrapper.three-cards{
+        /* 2 columns for small screens */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 70vw;
     }
 
 
@@ -593,6 +612,11 @@ p {
     .div4.long-bento {
         background-image: none;
     }
+
+    .card-img.half-width {
+        width: 100%;
+    }
+    
 
 
     /* FAQ fixes */
