@@ -143,6 +143,10 @@ p {
     align-self: stretch;
 }
 
+.banner-wrapper.ender{
+    padding-top: 50px;
+}
+
 .content-wrapper {
     /* background-color: rosybrown; */
     margin: auto;
@@ -152,6 +156,7 @@ p {
     align-items: center;
     justify-content: flex-start;
     gap: 18px;
+    z-index: 5;
 }
 
 .content-wrapper img {
@@ -181,7 +186,7 @@ h1 {
     text-align: center;
     font-size: 46px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
 }
 
 .section-title {
@@ -193,7 +198,7 @@ h1 {
     text-align: center;
     font-size: 26px;
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
 }
 
 p {
@@ -203,6 +208,7 @@ p {
     font-weight: 500;
     line-height: 1.5;
 }
+
 
 .cta-wrapper {
     display: flex;
@@ -255,7 +261,9 @@ p {
   }
   
   .mock-left,
-  .mock-right {
+  .mock-right,
+  .mock-left-bottom,
+  .mock-right-botton {
     width: 300px;
     z-index: 1;
     opacity: 0;
@@ -367,6 +375,37 @@ p {
     color: #fff; 
 }
 
+.div1.overlay-bento {
+    background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),     
+    url('https://img.freepik.com/free-photo/high-angle-man-posing-while-sitting-down-couch_23-2148429231.jpg?uid=R9829654&ga=GA1.1.51679548.1719519900&semt=ais_hybrid&w=740');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #fff; 
+}
+
+.div2.overlay-bento {
+    background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),     
+    url('https://images.unsplash.com/photo-1583761590945-e1f1a359747d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZWF0aW5nJTIwYnVyZ2VyfGVufDB8MnwwfHx8MA%3D%3D');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #fff; 
+}
+
+.div3.overlay-bento {
+    background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),     
+    url('https://images.unsplash.com/photo-1631362252544-af4a99cf037e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRlbm5pcyUyMG1hbnxlbnwwfDJ8MHx8fDA%3D');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #fff; 
+}
+
+
 
 .card-content {
     flex: 1;
@@ -417,6 +456,10 @@ p {
     line-height: 27px;
     font-weight: 500;
     letter-spacing: -0.1px;
+}
+
+.grid-wrapper h2.white {
+    color: #ffffff;
 }
 
 .grid-wrapper p {
@@ -504,6 +547,10 @@ p {
   .arrow {
     transition: transform 0.3s ease;
   }
+
+  .white {
+    color: #FFF;
+}
   
   
 

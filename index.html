@@ -187,6 +187,35 @@
             </div>
         </div>
 
+        <div class="section-wrapper">
+            <div class="content-wrapper">
+                <div class="intro-content-wrapper">
+                    <!-- <p>How it works</p> -->
+                    <h1 class="section-title">Who Is It For?</h1>
+                </div>
+                <p>
+                    FlareFree is designed for anyone living with gout who wants to take charge of their health. Whether you're newly diagnosed, managing ongoing symptoms, or supporting a loved one, this app helps you stay on track with:
+                </p>
+            </div>
+            <div class="grid-wrapper three-cards">
+                <div class="card div1 overlay-bento">
+                    <div class="card-content">
+                        <h2 class="white">People managing chronic <br> or occasional gout</h2>
+                    </div>
+                </div>
+                <div class="card div2 overlay-bento">
+                    <div class="card-content">
+                        <h2 class="white">Those newly diagnosed or monitoring uric acid levels</h2>
+                    </div>
+                </div>
+                <div class="card div3 overlay-bento">
+                    <div class="card-content">
+                        <h2 class="white">Anyone looking to live flare-free through smarter tracking</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="faq-section">
             <h2>Frequently Asked Questions</h2>
 
@@ -217,6 +246,32 @@
             </div>
         </section>
 
+        <!-- Ender CTA -->
+        <div class="wrapper">
+            <div class="banner-wrapper ender">
+                <div class="content-wrapper">
+                    <img class="app-ico" src="img/app-ico.svg" alt="FlareFree">
+                    <div class="intro-content-wrapper">
+                        <h1>Live Flare-Free.</h1>
+                        <h2>Track flares. Identify triggers. Feel your best.</h2>
+                    </div>
+                    <p>
+                        Ready to take control of your gout? FlareFree helps you monitor symptoms, spot patterns, and make smarter lifestyle choices—every step of the way. 
+                    </p>
+                    <div class="cta-wrapper">
+                        <a href="#"><img src="img/app-store.svg" alt=""></a>
+                        <!-- <a class="cta" href="#">Download Now</a> -->
+                    </div>
+                </div>
+                <!-- <img class="hero-mock" src="img/Hero-mock.png" alt=""> -->
+                <div class="hero-mock-wrapper">
+                    <img class="hero-mock mock-left-bottom" src="img/hero-mock-phone-left.png" alt="">
+                    <img class="hero-mock mock-main" src="img/hero-mock-phone-main.png" alt="">
+                    <img class="hero-mock mock-right-botton" src="img/hero-mock-phone-right.png" alt="">
+                </div>
+            </div>
+        </div>
+
 
 
 
@@ -242,6 +297,15 @@
             }
         });
 
+        const lt = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".hero-mock-trigger-bottom",
+                start: "top bottom",
+                end: "bottom center",
+                scrub: true
+            }
+        });
+
         const leftX = isMobile ? "-250px" : "-340px";
         const rightX = isMobile ? "250px" : "340px";
 
@@ -257,6 +321,20 @@
             y: 164,
             opacity: 1,
             rotate: 8,
+            duration: 1,
+            ease: "power1.inOut"
+        }, 0);
+
+        lt.to(".mock-left-bottom", {
+            x: leftX,
+            opacity: 1,
+            // rotate: -8,
+            duration: 1,
+            ease: "power1.inOut"
+        }, 0).to(".mock-right-botton", {
+            x: rightX,
+            opacity: 1,
+            // rotate: 8,
             duration: 1,
             ease: "power1.inOut"
         }, 0);
