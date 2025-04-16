@@ -22,9 +22,9 @@
 }
 
 /* Let's see the ghost divs */
-* {
+/* * {
     outline: 1px solid rgba(247, 201, 178, 0.2);
-}
+} */
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -44,7 +44,7 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* border: 5px solid red; */
 }
 
 h1,
@@ -76,9 +76,9 @@ p {
     height: 130px;
     position: absolute;
     inset: 0;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.5);
     z-index: -1;
 
     /* The fade effect for background blur*/
@@ -124,6 +124,7 @@ p {
     position: relative;
     z-index: 20;
     top: -130px;
+    overflow-x: hidden;
 }
 
 .wrapper {
