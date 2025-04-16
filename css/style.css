@@ -26,7 +26,9 @@
     outline: 1px solid rgba(247, 201, 178, 0.2);
 } */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -65,7 +67,8 @@ p {
 .header {
     position: sticky;
     top: 0;
-    z-index: 100; /* Ensures the header stays on top of other content */
+    z-index: 100;
+    /* Ensures the header stays on top of other content */
     background-color: transparent;
     height: 130px;
     overflow: hidden;
@@ -114,6 +117,18 @@ p {
 
 .nav-app-download {
     display: flex;
+    height: 54px;
+    color: white;
+    background-color: black;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+a.nav-app-download:hover {
+    background-color: rgb(100, 100, 100);
 }
 
 
@@ -144,7 +159,7 @@ p {
     align-self: stretch;
 }
 
-.banner-wrapper.ender{
+.banner-wrapper.ender {
     padding-top: 50px;
     padding-bottom: 80px;
 }
@@ -238,8 +253,34 @@ p {
     background-color: #fd6e42;
 }
 
+a.app-store {
+    display: flex;
+    height: 54px;
+    color: white;
+    background-color: black;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+a.app-store:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+#app-store-banner-cta {
+    display: none;
+}
+
 
 /* Hero banner animation */
+.hero-mock-trigger {
+    top: -140px;
+    /* border: solid 1px red; */
+    position: relative;
+}
+
 
 .hero-mock-wrapper {
     position: relative;
@@ -248,28 +289,28 @@ p {
     justify-content: center;
     height: 700px;
     max-width: 100vw;
-  }
-  
-  .hero-mock {
+}
+
+.hero-mock {
     position: absolute;
     width: 500px;
     height: auto;
     transition: transform 0.5s ease;
-  }
-  
-  .mock-main {
+}
+
+.mock-main {
     width: 300px;
     z-index: 2;
-  }
-  
-  .mock-left,
-  .mock-right,
-  .mock-left-bottom,
-  .mock-right-botton {
+}
+
+.mock-left,
+.mock-right,
+.mock-left-bottom,
+.mock-right-botton {
     width: 300px;
     z-index: 1;
     opacity: 0;
-  }
+}
 
 /* Hero banner animation */
 
@@ -319,11 +360,11 @@ p {
     border: 0.5px solid rgba(19, 19, 19, 0.15);
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03), 0px 1px 15px rgba(0, 0, 0, 0.01);
 
-    transition: 
-    transform 0.3s ease, 
-    box-shadow 0.3s ease, 
-    background-color 0.3s ease, 
-    border 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease,
+        border 0.3s ease;
 }
 
 .div1:hover,
@@ -374,37 +415,37 @@ p {
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
-    color: #fff; 
+    color: #fff;
 }
 
 .div1.overlay-bento {
     background-image:
-    linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),     
-    url('https://img.freepik.com/free-photo/high-angle-man-posing-while-sitting-down-couch_23-2148429231.jpg?uid=R9829654&ga=GA1.1.51679548.1719519900&semt=ais_hybrid&w=740');
+        linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+        url('https://img.freepik.com/free-photo/high-angle-man-posing-while-sitting-down-couch_23-2148429231.jpg?uid=R9829654&ga=GA1.1.51679548.1719519900&semt=ais_hybrid&w=740');
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    color: #fff; 
+    color: #fff;
 }
 
 .div2.overlay-bento {
     background-image:
-    linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),     
-    url('https://images.unsplash.com/photo-1583761590945-e1f1a359747d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZWF0aW5nJTIwYnVyZ2VyfGVufDB8MnwwfHx8MA%3D%3D');
+        linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+        url('https://images.unsplash.com/photo-1583761590945-e1f1a359747d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZWF0aW5nJTIwYnVyZ2VyfGVufDB8MnwwfHx8MA%3D%3D');
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    color: #fff; 
+    color: #fff;
 }
 
 .div3.overlay-bento {
     background-image:
-    linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),     
-    url('https://images.unsplash.com/photo-1631362252544-af4a99cf037e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRlbm5pcyUyMG1hbnxlbnwwfDJ8MHx8fDA%3D');
+        linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+        url('https://images.unsplash.com/photo-1631362252544-af4a99cf037e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRlbm5pcyUyMG1hbnxlbnwwfDJ8MHx8fDA%3D');
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    color: #fff; 
+    color: #fff;
 }
 
 
@@ -483,30 +524,30 @@ p {
     gap: 44px;
     padding-top: 130px;
     font-family: var(--font-family);
-  }
-  
-  .faq-section h2 {
+}
+
+.faq-section h2 {
     font-size: var(--font-size-heading);
     color: var(--text-color-primary);
     text-align: center;
     font-weight: var(--font-weight-regular);
-  }
-  
-  .accordion {
+}
+
+.accordion {
     display: flex;
     flex-direction: column;
     gap: 12px;
-  }
-  
-  .accordion-item {
+}
+
+.accordion-item {
     border: .5px solid rgba(19, 19, 19, 0.1);
     border-radius: 16px;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03), 0px 1px 15px rgba(0, 0, 0, 0.01);
-  }
-  
-  .accordion-header {
+}
+
+.accordion-header {
     font-size: 17px;
     font-weight: var(--font-weight-regular);
     color: var(--text-color-primary);
@@ -520,37 +561,43 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .accordion-body {
+}
+
+.accordion-body {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     padding: 0 24px;
     transition: max-height 0.4s ease, padding 0.3s ease, opacity 0.3s ease;
-  }
-  
-  .accordion-body p {
+}
+
+.accordion-body p {
     color: #7a7a7a;
     font-size: 16px;
     line-height: 1.5;
-  }
-  
-  .accordion-item.active .accordion-body {
-    max-height: 300px; /* Adjust based on content length */
+    text-align: left;
+}
+
+.accordion-item.active .accordion-body {
+    max-height: 300px;
+    /* Adjust based on content length */
     padding: 14px 24px 18px;
     opacity: 1;
-  }
-  
-  .accordion-item.active .arrow {
-    transform: rotate(180deg);
-  }
-  
-  .arrow {
-    transition: transform 0.3s ease;
-  }
+}
 
-  .white {
+.accordion-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-item.active .accordion-header {
+    color: var(--accent-color-1);
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.white {
     color: #FFF;
 }
 
@@ -567,44 +614,44 @@ p {
     color: #333;
     flex-wrap: wrap;
     margin-top: -130px;
-  }
-  
-  .footer-left {
+}
+
+.footer-left {
     display: flex;
     align-items: center;
     gap: 16px;
-  }
-  
-  .footer-logo {
+}
+
+.footer-logo {
     height: 34px;
-  }
-  
-  .footer-right {
+}
+
+.footer-right {
     display: flex;
     align-items: center;
     gap: 12px;
-  }
+}
 
-  .footer-text {
+.footer-text {
     font-size: 14px;
-  }
-  
-  .footer-link {
+}
+
+.footer-link {
     color: var(--accent-color-1);
     text-decoration: none;
     transition: color 0.2s;
-  }
-  
-  .footer-link:hover {
+}
+
+.footer-link:hover {
     color: #0077cc;
-  }
-  
-  .footer-separator {
+}
+
+.footer-separator {
     color: #999;
-  }
-  
-  
-  
+}
+
+
+
 
 
 
@@ -627,7 +674,8 @@ p {
 
 @media only screen and (max-width: 1070px) {
 
-    .grid-wrapper, .grid-wrapper.three-cards {
+    .grid-wrapper,
+    .grid-wrapper.three-cards {
         width: 90vw;
     }
 
@@ -668,7 +716,7 @@ p {
         padding-top: 130px;
     }
 
-    h1{
+    h1 {
         font-size: 32px;
         /* smaller for mobile */
     }
@@ -677,11 +725,13 @@ p {
         font-size: 24px;
     }
 
-    .intro-content-wrapper h2, .grid-wrapper h2 {
+    .intro-content-wrapper h2,
+    .grid-wrapper h2 {
         font-size: 20px;
     }
 
-    p, .grid-wrapper p {
+    p,
+    .grid-wrapper p {
         font-size: 14px;
         line-height: 22px;
     }
@@ -697,7 +747,7 @@ p {
         width: 70vw;
     }
 
-    .grid-wrapper.three-cards{
+    .grid-wrapper.three-cards {
         /* 2 columns for small screens */
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -723,38 +773,39 @@ p {
     .card-img.half-width {
         width: 100%;
     }
-    
+
 
 
     /* FAQ fixes */
 
-        .faq-section {
-          width: 90%;
-          gap: 16px;
-        }
-      
-        .faq-section h2 {
-          font-size: 22px; /* Adjust as needed for smaller screens */
-        }
-      
-        .accordion-header {
-          font-size: 16px;
-          padding: 16px 20px;
-        }
-      
-        .accordion-body {
-          padding: 0 20px;
-        }
-      
-        .accordion-item.active .accordion-body {
-          padding: 12px 20px 16px;
-        }
-      
-        .accordion-body p {
-          font-size: 15px;
-        }
-      }
-      
+    .faq-section {
+        width: 90%;
+        gap: 36px;
+    }
+
+    .faq-section h2 {
+        font-size: 22px;
+        /* Adjust as needed for smaller screens */
+    }
+
+    .accordion-header {
+        font-size: 16px;
+        padding: 16px 20px;
+    }
+
+    .accordion-body {
+        padding: 0 20px;
+    }
+
+    .accordion-item.active .accordion-body {
+        padding: 12px 20px 16px;
+    }
+
+    .accordion-body p {
+        font-size: 15px;
+    }
+}
+
 
 
 @media only screen and (max-width: 480px) {
@@ -764,13 +815,17 @@ p {
         overflow-x: hidden;
     }
 
-    #nav-app-download {
+    .nav-app-download {
         display: none;
     }
 
     .nav-container {
         justify-content: center;
         padding-right: 26px;
+    }
+
+    #app-store-banner-cta {
+        display: flex;
     }
 
     .grid-wrapper {
@@ -781,7 +836,11 @@ p {
 
     .hero-mock-wrapper {
         height: 540px;
-      }
+    }
+
+    .hero-mock-trigger {
+        top: -240px;
+    }
 
     .hero-mock {
         width: 62vw;
@@ -803,16 +862,16 @@ p {
 
     .footer {
         gap: 14px;
-      }
-      
-      .footer-left {
+    }
+
+    .footer-left {
         flex-direction: column;
         gap: 8px;
-      }
-      
-      .footer-logo {
+    }
+
+    .footer-logo {
         height: 34px;
-      }
-      
+    }
+
 
 }
