@@ -917,6 +917,12 @@ a.app-store:hover {
     }
 }
 
+@media only screen and (max-width: 560px) {
+.cta-wrapper {
+    flex-direction: column;
+    gap: 24px;
+}
+}
 
 
 @media only screen and (max-width: 480px) {
@@ -945,10 +951,6 @@ a.app-store:hover {
         /* 1 column for very small screens */
     }
 
-    .cta-wrapper {
-        flex-direction: column;
-        gap: 24px;
-    }
 
     .hero-mock-wrapper {
         height: 540px;
