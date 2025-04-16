@@ -377,25 +377,36 @@
             }
         });
 
-        const leftX = isMobile ? "-250px" : "-340px";
-        const rightX = isMobile ? "250px" : "340px";
+        const leftX = isMobile ? "-250px" : "-267px";
+        const rightX = isMobile ? "250px" : "267px";
 
         // Slower & smoother animations
         tl.to(".mock-left", {
             x: leftX,
-            y: 164,
+            y: 50,
             opacity: 1,
             filter: "blur(0px)",
-            rotate: -8,
+            rotate: -4,
             duration: 3,
+            filter: "blur(0px) drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3))",
             ease: "power2.out"
         }, 0).to(".mock-right", {
             x: rightX,
-            y: 164,
+            y: 50,
             opacity: 1,
             filter: "blur(0px)",
-            rotate: 8,
+            rotate: 4,
             duration: 3,
+            filter: "blur(0px) drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3))",
+            ease: "power2.out"
+        }, 0).to(".mock-main", {
+            x: 0,
+            y: 0,
+            opacity: 1,
+            filter: "blur(0px)",
+            rotate: 0,
+            duration: 3,
+            filter: "blur(0px) drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3))",
             ease: "power2.out"
         }, 0).to(".mock-topright", {
             x: -500,
@@ -482,14 +493,16 @@
 
         // Bottom animations slower too
         tl2.to(".mock-left-bottom", {
-            x: leftX,
+            x: -340,
             opacity: 1,
             duration: 2,
+            ilter: "blur(0px) drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3))",
             ease: "power2.out"
         }, 0).to(".mock-right-bottom", {
-            x: rightX,
+            x: 340,
             opacity: 1,
             duration: 2,
+            ilter: "blur(0px) drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3))",
             ease: "power2.out"
         }, 0);
 
