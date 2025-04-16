@@ -22,9 +22,9 @@
 }
 
 /* Let's see the ghost divs */
-/* * {
+* {
     outline: 1px solid rgba(247, 201, 178, 0.2);
-} */
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -551,6 +551,55 @@ p {
   .white {
     color: #FFF;
 }
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 32px;
+    gap: 54px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    color: #333;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .footer-logo {
+    height: 34px;
+  }
+  
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
+  
+  .footer-link {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footer-link:hover {
+    color: #0077cc;
+  }
+  
+  .footer-separator {
+    color: #999;
+  }
+  
   
   
 
